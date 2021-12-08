@@ -1,9 +1,15 @@
 cmake_minimum_required(VERSION "3.14")
+# The compatibility flag for MSVC runtime library flag. Must set "NEW" 
+cmake_policy(SET CMP0091 "NEW")   
+# Enforce binding to /MT or /MTd
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+
 
 # Parameters inside project
 project("template_application")
 # Comment out next line if the project is library
 set(EXECUTABLE_NAME ${PROJECT_NAME})
+
 
 # Do not edit the lines below 
 
