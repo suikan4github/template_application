@@ -1,10 +1,23 @@
 #include <iostream>
+#include <thread>
 #include "calc.hpp"
+
+double result;
+
+void func()
+{
+    Calc calc; 
+
+    result = calc.sqrt(4);
+}
 
 int main()
 {
-    Calc calc;
+    std::thread t(func);
 
-    std::cout << calc.sqrt(4) << std::endl;
+    t.join();
+    
+    std::cout << result << std::endl;
+
     return 0;
 }

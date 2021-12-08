@@ -31,6 +31,8 @@ set(CMAKE_CXX_STANDARD "11")
 # Thus, place this command at the root of project.
 include("CTest")
 
+# Using thread inside application
+find_package("Threads" REQUIRED)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

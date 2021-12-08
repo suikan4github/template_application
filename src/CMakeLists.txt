@@ -8,6 +8,8 @@ set(MAIN_FILE_PATTERN ".*/main.cpp$")
 file(GLOB ALL_SRCS "*.cpp")
 
 add_executable(${EXECUTABLE_NAME} ${ALL_SRCS})
+target_link_libraries(${EXECUTABLE_NAME} "pthread")
+
 
 # Remove the "main file" from list to create a library for test
 set( LIB_SRCS ${ALL_SRCS})                                  # create a new list as copy
