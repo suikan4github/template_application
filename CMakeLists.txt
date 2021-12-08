@@ -7,10 +7,18 @@ cmake_policy(SET CMP0091 "NEW")
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 
 
+#----------------------------------------------------------------------------
 # Parameters inside project
 project("template_application")
 
+# Compiler option
+# GoogleTest requirest C++11 or later
+set(CMAKE_CXX_STANDARD "11")
+set(CMAKE_CXX_STANDARD_REQUIRED "ON")
+set(CMAKE_CXX_EXTENSIONS "OFF")
 
+
+#----------------------------------------------------------------------------
 # Do not edit the lines below 
 
 # Executable name
@@ -19,10 +27,6 @@ set(EXECUTABLE_NAME ${PROJECT_NAME})
 # Test executable and library name
 set(TEST_EXECUTABLE_NAME "test_${PROJECT_NAME}")
 set(TEST_LIBRARY_NAME "${PROJECT_NAME}_for_test")
-
-# Compiler option
-# GoogleTest requirest C++11 or later
-set(CMAKE_CXX_STANDARD "11")
 
 # Enable CTest
 # This command automatically run the enable_test() command.
