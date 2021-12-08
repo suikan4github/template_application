@@ -1,17 +1,20 @@
-cmake_minimum_required(VERSION "3.14")
-# The compatibility flag for MSVC runtime library flag. Must set "NEW" 
+# CMake 3.15 or newer is requried because of CMP0091.
+cmake_minimum_required(VERSION "3.15")
+
+# The CMake compatibility flag for MSVC runtime library flag. New in 3.15.  Must set "NEW"
 cmake_policy(SET CMP0091 "NEW")   
-# Enforce binding to /MT or /MTd
+# Enforce the  /MT or /MTd as link option for MS Visual Studio C++
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 
 
 # Parameters inside project
 project("template_application")
-# Comment out next line if the project is library
-set(EXECUTABLE_NAME ${PROJECT_NAME})
 
 
 # Do not edit the lines below 
+
+# Executable name
+set(EXECUTABLE_NAME ${PROJECT_NAME})
 
 # Test executable and library name
 set(TEST_EXECUTABLE_NAME "test_${PROJECT_NAME}")
