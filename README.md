@@ -38,6 +38,39 @@ A CMake file templetes and sample C++ application which allows unit test by Goog
 
 
 ## Usage
+### Visual Studio CODE
+Run the followings commands inside this directory ( Where README.md exists) to start the VS CODE: 
+```Shell
+code .
+```
+Inside VS CODE, Type Ctrl-Shift-P to show the command pallet. And then, execute followoing command :
+```
+CMake: Configure
+```
+Now, you can build, run the executable and Ctest from the status bar of the VS CODE.
+
+![](image/statusbar.png)
+### Command line
+Run the followings commands inside this directory ( Where README.md exists) : 
+```Shell
+mkdir build
+cd build
+cmake ..
+cmake --build .
+```
+The executables are stored in the subdirectories: 
+- build/src
+- build/test
+
+In the case of MS Visual Studio C, the executables are located under the build configuration subidirectories like :
+- build/src/Debug, build/src/Release
+- build/test/Debug, build/test/Release
+
+To run the Ctest, type :
+```Shell
+ctest
+```
+
 ## Install
  
 ### Ubuntu
