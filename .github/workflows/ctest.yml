@@ -31,17 +31,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Configure the project
-        run: |
-          cd build
-          cmake ..
+        run:  cd build ; cmake ..
       # Runs a single command using the runners shell
       - name: Build the project
-        run: |
-          cd build
-          cmake --build .
+        run: cd build ; cmake --build .
 
       # Runs a set of commands using the runners shell
       - name: Run a test
-        run: |
-          cd build 
-          ctest
+        run: cd build; ctest
