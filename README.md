@@ -10,7 +10,8 @@ A CMake file templetes and sample C++ application which allows unit test by Goog
 - Tested on Ubuntu 20.04  with GCC.
 - Tested on Windows 11 with Visual Studio C++ compiler.
 - Tested on WSL2 with VS CODE remote server.
-## Demo
+## Screenshot
+![](image/screenshot.png)
 ## Requirement
 ### Ubuntu
 - Ubuntu 20.04
