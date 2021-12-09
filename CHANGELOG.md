@@ -11,4 +11,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 
-[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.0...HEAD
+[Unreleased]: https://github.com/suikan4github/template_application/compare/v0.0.0...HEAD
