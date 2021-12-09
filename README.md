@@ -94,20 +94,20 @@ winget install Python.Python.3 -e
 - Note 2: The above winget install the CMake installer only. Run the CMake once and complete the installation.
 - Note 3: The above wget install the VisualStudio launcher only. [Install the C++ worload](https://docs.microsoft.com/en-us/cpp/build/vscpp-step-0-installation?view=msvc-170) after winget installation.
 
+After the installation, set the PATH environment variable for CMake, Visual Studio C and Git. 
+
 ### WSL2
 
-Run followings on the PowerShell or Command. 
+Run followings on the PowerShell or Command to install the Visual Studio CODE editor. 
 ```PowerShell
 winget install Microsoft.VisualStudioCode -e
 ```
-Run followings on the shell. 
+Then, run followings on the Ubuntu shell. 
 ```Shell
 sudo apt-get install build-essential cmake ca-certifications
 ```
 - Note 1: After installing VS CODE, install the [C++ Extention Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack) to the VS CODE.
-- Note 2: The above winget install the CMake installer only. Run the CMake once and complete the installation.
-- Note 3: The above wget install the VisualStudio launcher only. [Install the C++ worload](https://docs.microsoft.com/en-us/cpp/build/vscpp-step-0-installation?view=msvc-170) after winget installation.
-- Note 4: The VS CODE is installed in the Windows side and accessed from WSL as remote server. Refer the [explanation by Microsoft](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
+- Note 2: The VS CODE is installed in the Windows side and accessed from WSL as remote server. Refer the [explanation by Microsoft](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode) and install the Remote Development extention pack.
 
 ## License
 This project is shared with the [MIT License](LICENSE). 
