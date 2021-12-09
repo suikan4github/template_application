@@ -8,7 +8,7 @@ TEST(Calc, Sqrt)
 {
     Calc calc;
 
-    EXPECT_EQ(calc.sqrt(4.0), 1.0);
+    EXPECT_EQ(calc.sqrt(4.0), 2.0);
 }
 
 TEST(Calc, SqrtPrrecision)
