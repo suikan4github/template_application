@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 ### Fixed
 
+## [1.1.0] - 2021-12-11
+### Added
+- Added "Customize the project" to README.md
+### Changed
+### Fixed
+- Corrected spells. 
+- Corrected the URL of the CHANGELOG.md
+
 ## [1.0.0] - 2021-12-10
 ### Added
 - Initial release of project
@@ -16,5 +24,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 
-[Unreleased]: https://github.com/suikan4github/template_application/compare/v1.0.0...develop
-[1.0.0]: https://github.com/suikan4github/template_application/compare/v1.0.0...v0.0.0
+[Unreleased]: https://github.com/suikan4github/template_application/compare/v1.1.0...develop
+[1.1.0]: https://github.com/suikan4github/template_application/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/suikan4github/template_application/compare/v0.0.0...v1.0.0
