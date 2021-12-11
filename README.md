@@ -3,13 +3,13 @@ A template application for C++ with CMake and GoogleTest
 ## Description
 A CMake file template and sample C++ application which allows unit test by GoogleTest. This template application is :
 - Able to collaborate with [Visual Studio CODE](https://azure.microsoft.com/ja-jp/products/visual-studio-code/) editor.
-- Build in [Google Test](https://github.com/google/googletest) which is downloaded automatically.
+- Build in [GoogleTest](https://github.com/google/googletest) which is downloaded automatically.
 - "src" directory for application source code.
 - "test" directory for unit tests. 
 - std::thread aware. 
-- Tested on Ubuntu 20.04  with GCC.
-- Tested on Windows 11 with Visual Studio C++ compiler.
-- Tested on WSL2 with VS CODE remote server.
+- Tested with Ubuntu 20.04  with GCC.
+- Tested with Windows 11 with Visual Studio C++ compiler.
+- Tested with WSL2 with VS CODE remote server.
 ## Screenshot
 ![](image/screenshot.png)
 ## Requirement
@@ -39,7 +39,7 @@ A CMake file template and sample C++ application which allows unit test by Googl
 
 ## Usage
 ### Visual Studio CODE
-Run the followings commands inside this directory ( Where README.md exists) to start the VS CODE: 
+Run the followings command inside this directory ( Where README.md exists) to start the VS CODE: 
 ```Shell
 code .
 ```
@@ -107,7 +107,7 @@ Then, run followings on the Ubuntu shell.
 sudo apt-get install build-essential cmake ca-certificates
 ```
 - Note 1: After installing VS CODE, install the [C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack) to the VS CODE.
-- Note 2: The VS CODE is installed in the Windows side and accessed from WSL as remote server. Refer the [explanation by Microsoft](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode) and install the Remote Development extension pack.
+
 
 ## Customize the project
 To change the project name, edit the [CMakeLists.txt](CMakeLists.txt) and change following line : 

@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 ### Fixed
 
+## [1.1.3] - 2021-12-11
+### Added
+### Changed
+### Fixed
+- Corrected spells and deleted redundant explanations.
+
 ## [1.1.2] - 2021-12-11
 ### Added
 ### Changed
@@ -36,7 +42,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 
-[Unreleased]: https://github.com/suikan4github/template_application/compare/v1.1.2...develop
+[Unreleased]: https://github.com/suikan4github/template_application/compare/v1.1.3...develop
+[1.1.3]: https://github.com/suikan4github/template_application/compare/v1.1.2...v1.1.3
 [1.1.2]: https://github.com/suikan4github/template_application/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/suikan4github/template_application/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/suikan4github/template_application/compare/v1.0.0...v1.1.0
