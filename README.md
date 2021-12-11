@@ -76,7 +76,7 @@ ctest
 ### Ubuntu
 Run followings on the shell. 
 ```Shell
-sudo snap install vscode --classic
+sudo snap install code --classic
 sudo apt-get install build-essential cmake
 ```
 - Note 1: After installing VS CODE, install the [C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack) to the VS CODE.
