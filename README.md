@@ -3,13 +3,13 @@ A template application for C++ with CMake and GoogleTest
 ## Description
 A CMake file template and sample C++ application which allows unit test by GoogleTest. This template application is :
 - Able to collaborate with [Visual Studio CODE](https://azure.microsoft.com/ja-jp/products/visual-studio-code/) editor.
-- Build in [Google Test](https://github.com/google/googletest) which is downloaded automatically.
+- Build in [GoogleTest](https://github.com/google/googletest) which is downloaded automatically.
 - "src" directory for application source code.
 - "test" directory for unit tests. 
 - std::thread aware. 
-- Tested on Ubuntu 20.04  with GCC.
-- Tested on Windows 11 with Visual Studio C++ compiler.
-- Tested on WSL2 with VS CODE remote server.
+- Tested with Ubuntu 20.04  with GCC.
+- Tested with Windows 11 with Visual Studio C++ compiler.
+- Tested with WSL2 with VS CODE remote server.
 ## Screenshot
 ![](image/screenshot.png)
 ## Requirement
