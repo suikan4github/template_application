@@ -34,7 +34,7 @@ A CMake file template and sample C++ application which allows unit test by Googl
 - CMake 3.15 or newer
 - Python 3
 - g++
-- ca-certifications 
+- ca-certificates
 
 
 ## Usage
@@ -76,7 +76,7 @@ ctest
 ### Ubuntu
 Run followings on the shell. 
 ```Shell
-sudo snap install vscode --classic
+sudo snap install code --classic
 sudo apt-get install build-essential cmake
 ```
 - Note 1: After installing VS CODE, install the [C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack) to the VS CODE.
@@ -104,7 +104,7 @@ winget install Microsoft.VisualStudioCode -e
 ```
 Then, run followings on the Ubuntu shell. 
 ```Shell
-sudo apt-get install build-essential cmake ca-certifications
+sudo apt-get install build-essential cmake ca-certificates
 ```
 - Note 1: After installing VS CODE, install the [C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack) to the VS CODE.
 - Note 2: The VS CODE is installed in the Windows side and accessed from WSL as remote server. Refer the [explanation by Microsoft](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode) and install the Remote Development extension pack.
