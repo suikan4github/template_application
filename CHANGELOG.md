@@ -31,6 +31,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
 [Unreleased]: https://github.com/suikan4github/template_application/compare/v1.1.1...develop
-[1.1.0]: https://github.com/suikan4github/template_application/compare/v1.1.0...v1.1.1
+[1.1.1]: https://github.com/suikan4github/template_application/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/suikan4github/template_application/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/suikan4github/template_application/compare/v0.0.0...v1.0.0
