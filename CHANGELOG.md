@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - [Issue #6](https://github.com/suikan4github/template_application/issues/6) :  Need detail report of ctest in case of test failed.
 - [Issue #7](https://github.com/suikan4github/template_application/issues/7) :  Guard death test by conditional compile.
 - [Issue #8](https://github.com/suikan4github/template_application/issues/8) :   Add develop branch to the Action trigger "pull_request" 
+- [Issue #9](https://github.com/suikan4github/template_application/issues/9) :   Add Releae build to test of the GitHub Actions 
+- [Issue #10](https://github.com/suikan4github/template_application/issues/10) :   Change name of Death test name.
 
 ## [1.1.3] - 2021-12-11
 ### Added
