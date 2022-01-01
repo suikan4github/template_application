@@ -40,14 +40,21 @@ jobs:
       # Runs only when Linux
       - name: Build for Linux
         if: ${{ matrix.os == 'ubuntu-latest' }}
-        run:  cmake --build . --target all --config ${{ matrix.build }} --clean-first -j4
+        run: |
+          cd build
+          cmake --build . --target all --config ${{ matrix.build }} --clean-first -j4
+
 
       # Runs only when Windows
       - name: Build for Windows
         if: ${{ matrix.os == 'windows-latest' }}
-        run:  cmake --build . --target all_build --config ${{ matrix.build }} --clean-first -j4
+        run: |
+          cd build
+          cmake --build . --target all_build --config ${{ matrix.build }} --clean-first -j4
 
       - name: Test
-        run: ctest --rerun-failed --output-on-failure -j 4
+        run:  |
+          cd build
+          ctest --rerun-failed --output-on-failure -j 4
 
 
