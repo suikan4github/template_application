@@ -15,10 +15,15 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains  jobs called "Test-on-Linux" and "Test-on-Windows"
+  # This workflow contains build matrix
   Test-on-Linux:
-    # Test on Ubuntu
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        build: [Release, Debug]
+
+    # Test on specified OS
+    runs-on: ${{ matrix.os }}
 
     # Configure - Build - Test
     steps:
@@ -26,62 +31,22 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs commands using the runners shell
-      - name: Debug test on Linux
+      - name: Configuration
         run: |
-          echo "Configure Debug, build and test"
-          cd ${GITHUB_WORKSPACE}
-          mkdir build_Debug
-          cd build_Debug
-          echo "#######################################################################"
-          echo "#                         Debug build                                 #"
-          echo "#######################################################################"
-          cmake .. -DCMAKE_BUILD_TYPE:STRING=Debug
-          cmake --build . --target all --config Debug --clean-first -j4
-          ctest --rerun-failed --output-on-failure -j 4
-      - name: Release test on Linux
-        run: |
-          echo "Configure Release, build and test"
-          cd ${GITHUB_WORKSPACE}
-          mkdir build_Release
-          cd build_Release
-          echo "#######################################################################"
-          echo "#                         Release build                               #"
-          echo "#######################################################################"
-          cmake .. -DCMAKE_BUILD_TYPE:STRING=Release
-          cmake --build . --target all --config Release --clean-first -j4
-          ctest --rerun-failed --output-on-failure -j 4
+          mkdir build
+          cd build
+          cmake .. -DCMAKE_BUILD_TYPE:STRING=${{ matrix.build }}
 
-  Test-on-Windows:
-    # Test on Windows Server
-    runs-on: windows-latest
+      # Runs only when Linux
+      - name: Build for Linux
+        if: ${{ matrix.os == 'ubuntu-latest' }}
+        run:  cmake --build . --target all --config ${{ matrix.build }} --clean-first -j4
 
-    # Configure - Build - Test
-    steps:
-      # Checks-out repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      # Runs only when Windows
+      - name: Build for Windows
+        if: ${{ matrix.os == 'windows-latest' }}
+        run:  cmake --build . --target all_build --config ${{ matrix.build }} --clean-first -j4
 
-      # Runs commands using the runners shell
-      - name: Debug test on Windows
-        run: |
-          echo "Configure Debug, build and test"
-          cd $Env:GITHUB_WORKSPACE
-          mkdir build_Debug
-          cd build_Debug
-          echo "#######################################################################"
-          echo "#                         Debug build                                 #"
-          echo "#######################################################################"
-          cmake .. -DCMAKE_BUILD_TYPE:STRING=Debug
-          cmake --build . --target all_build --config Debug --clean-first -j4
-          ctest --rerun-failed --output-on-failure -j 4
-      - name: Release test on Windows
-        run: |
-          echo "Configure Release, build and test"
-          cd $Env:GITHUB_WORKSPACE
-          mkdir build_Release
-          cd build_Release
-          echo "#######################################################################"
-          echo "#                         Release build                               #"
-          echo "#######################################################################"
-          cmake .. -DCMAKE_BUILD_TYPE:STRING=Release
-          cmake --build . --target all_build --config Release --clean-first -j4
-          ctest --rerun-failed --output-on-failure -j 4
+      - name:Test
+        run: ctest --rerun-failed --output-on-failure -j 4
+
