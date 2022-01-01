@@ -47,6 +47,7 @@ jobs:
         if: ${{ matrix.os == 'windows-latest' }}
         run:  cmake --build . --target all_build --config ${{ matrix.build }} --clean-first -j4
 
-      - name:Test
+      - name: Test
         run: ctest --rerun-failed --output-on-failure -j 4
+
 
