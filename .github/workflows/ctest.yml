@@ -64,7 +64,7 @@ jobs:
       - name: Debug test on Windows
         run: |
           echo "Configure Debug, build and test"
-          cd ${{GITHUB_WORKSPACE}}
+          cd $Env:GITHUB_WORKSPACE
           mkdir build_Debug
           cd build_Debug
           echo "#######################################################################"
@@ -76,7 +76,7 @@ jobs:
       - name: Release test on Windows
         run: |
           echo "Configure Release, build and test"
-          cd ${{GITHUB_WORKSPACE}}
+          cd $Env:GITHUB_WORKSPACE
           mkdir build_Release
           cd build_Release
           echo "#######################################################################"
