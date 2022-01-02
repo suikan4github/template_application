@@ -7,9 +7,17 @@ A CMake file template and sample C++ application which allows unit test by Googl
 - "src" directory for application source code.
 - "test" directory for unit tests. 
 - std::thread aware. 
-- Tested with Ubuntu 20.04  with GCC.
-- Tested with Windows 11 with Visual Studio C++ compiler.
-- Tested with WSL2 with VS CODE remote server.
+- Generate Gcov data files during test ( except Windows platform )
+- Tested: 
+    - Ubuntu 20.04  with GCC.
+    - Windows 11 with Visual Studio C++ compiler.
+    - WSL2 with VS CODE remote server.
+- Automatically tested by GitHub Actions.
+    - linux-latest, Debug
+    - linux-latest, Release
+    - windows-latest, Debug
+    - windows-latest, Release
+    
 ## Screenshot
 ![](image/screenshot.png)
 ## Requirement
@@ -79,7 +87,7 @@ Run followings on the shell.
 sudo snap install code --classic
 sudo apt-get install build-essential cmake
 ```
-- Note 1: After installing VS CODE, install the [C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack) to the VS CODE.
+- Note 1: After installing VS CODE, install the [C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack) and the [Gcov Viewer extension](https://marketplace.visualstudio.com/items?itemName=JacquesLucke.gcov-viewer) to the VS CODE.
 ### Windows
 
 Run followings on the PowerShell or Command . 
@@ -90,7 +98,7 @@ winget install Microsoft.VisualStudio.2022.Community -e
 winget install Git.Git -e
 winget install Python.Python.3 -e
 ```
-- Note 1: After installing VS CODE, install the [C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack) to the VS CODE.
+- Note 1: After installing VS CODE, install the [C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack) and the [Gcov Viewer extension](https://marketplace.visualstudio.com/items?itemName=JacquesLucke.gcov-viewer) to the VS CODE.
 - Note 2: The above winget install the CMake installer only. Run the CMake once and complete the installation.
 - Note 3: The above wget install the VisualStudio launcher only. [Install the C++ workload](https://docs.microsoft.com/en-us/cpp/build/vscpp-step-0-installation?view=msvc-170) after winget installation.
 
@@ -106,7 +114,7 @@ Then, run followings on the Ubuntu shell.
 ```Shell
 sudo apt-get install build-essential cmake ca-certificates
 ```
-- Note 1: After installing VS CODE, install the [C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack) to the VS CODE.
+- Note 1: After installing VS CODE, install the [C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack) and the [Gcov Viewer extension](https://marketplace.visualstudio.com/items?itemName=JacquesLucke.gcov-viewer) to the VS CODE.
 
 
 ## Customize the project
