@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 ### Fixed
 
-## [1.2.0] - 2022-02-02
+## [1.2.0] - 2022-01-02
 ### Added
 - [Issue #13](https://github.com/suikan4github/template_application/issues/13) :  Add gcov support. 
 - [Issue #14](https://github.com/suikan4github/template_application/issues/14) :  Add Windows run on action 
