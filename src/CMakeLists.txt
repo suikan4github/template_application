@@ -16,11 +16,3 @@ if (NOT(MSVC))
     target_link_libraries(${EXECUTABLE_NAME} "pthread")
 endif(NOT(MSVC))
 
-
-# Remove the "main file" from list to create a library for test
-set( LIB_SRCS ${ALL_SRCS})                                  # create a new list as copy
-list(FILTER LIB_SRCS EXCLUDE REGEX ${MAIN_FILE_PATTERN})    # Filter out the main file
-
-# Library for testing ( without main file)
-add_library(${TEST_LIBRARY_NAME} STATIC
-    ${LIB_SRCS})

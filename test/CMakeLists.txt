@@ -14,7 +14,7 @@ list(FILTER LIB_SRC EXCLUDE REGEX ${MAIN_FILE_PATTERN})    # Filter out the main
 file(GLOB TEST_SRC "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
 
 # Test executable and library name
-set(TEST_EXECUTABLE_NAME test_${MY_LIBRARY_NAME})
+set(TEST_EXECUTABLE_NAME test_${PROJECT_NAME})
 
 # Add the executable for the testcase which is using googletest
 add_executable(${TEST_EXECUTABLE_NAME} ${TEST_SRC} ${LIB_SRC})

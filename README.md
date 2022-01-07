@@ -13,7 +13,7 @@ A CMake file template and sample C++ application which allows unit test by Googl
     - Windows 11 with Visual Studio C++ compiler.
     - WSL2 with VS CODE remote server.
 - Automatically tested by GitHub Actions.
-    - linux-latest, Debug
+    - linux-latest, Debug (With gcovr report)
     - linux-latest, Release
     - windows-latest, Debug
     - windows-latest, Release
