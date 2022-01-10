@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 ### Fixed
 
+## [1.3.0] - 2022-01-10
+### Added
+- [Issue #17](https://github.com/suikan4github/template_application/issues/17) :  Add gcovr support. 
+### Changed
+- [Issue #18](https://github.com/suikan4github/template_application/issues/18) :   Display alll warning during build
+### Fixed
+
 ## [1.2.0] - 2022-01-02
 ### Added
 - [Issue #13](https://github.com/suikan4github/template_application/issues/13) :  Add gcov support. 
@@ -60,7 +67,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 
-[Unreleased]: https://github.com/suikan4github/template_application/compare/v1.2.0...develop
+[Unreleased]: https://github.com/suikan4github/template_application/compare/v1.3.0...develop
+[1.2.0]: https://github.com/suikan4github/template_application/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/suikan4github/template_application/compare/v1.1.4...v1.2.0
 [1.1.4]: https://github.com/suikan4github/template_application/compare/v1.1.3...v1.1.4
 [1.1.3]: https://github.com/suikan4github/template_application/compare/v1.1.2...v1.1.3
