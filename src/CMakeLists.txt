@@ -10,9 +10,9 @@ file(GLOB ALL_SRCS "*.cpp")
 
 add_executable(${EXECUTABLE_NAME} ${ALL_SRCS})
 
-# Add pthread library to support std::thread
-# In the case of MSVC, this is not required.
-if (NOT(MSVC))
-    target_link_libraries(${EXECUTABLE_NAME} "pthread")
-endif(NOT(MSVC))
+    # Add pthread library to support std::thread
+    # In the case of MSVC, this is not required.
+    if (NOT(MSVC))
+        target_link_libraries(${EXECUTABLE_NAME} "pthread")
+    endif(NOT(MSVC))
 

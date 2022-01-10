@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - [Issue #17](https://github.com/suikan4github/template_application/issues/17) :  Add gcovr support. 
 ### Changed
+- [Issue #18](https://github.com/suikan4github/template_application/issues/18) :   Display alll warning during build
 ### Fixed
 
 ## [1.2.0] - 2022-01-02
