@@ -6,8 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - YYYY-MM-DD
 ### Added
-- [Issue #20](https://github.com/suikan4github/template_application/issues/20) :  Add doxygen auto generation.
+### Changed
+### Fixed
 
+## [1.4.0] - 2022-01-22
+### Added
+- [Issue #20](https://github.com/suikan4github/template_application/issues/20) :  Add doxygen auto generation.
 ### Changed
 ### Fixed
 
@@ -69,8 +73,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 
-[Unreleased]: https://github.com/suikan4github/template_application/compare/v1.3.0...develop
-[1.2.0]: https://github.com/suikan4github/template_application/compare/v1.2.0...v1.3.0
+[Unreleased]: https://github.com/suikan4github/template_application/compare/v1.4.0...develop
+[1.4.0]: https://github.com/suikan4github/template_application/compare/v1.3.0...v1.4.0
+[1.3.0]: https://github.com/suikan4github/template_application/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/suikan4github/template_application/compare/v1.1.4...v1.2.0
 [1.1.4]: https://github.com/suikan4github/template_application/compare/v1.1.3...v1.1.4
 [1.1.3]: https://github.com/suikan4github/template_application/compare/v1.1.2...v1.1.3
