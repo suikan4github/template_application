@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - YYYY-MM-DD
 ### Added
+- [Issue #20](https://github.com/suikan4github/template_application/issues/20) :  Add doxygen auto generation.
+
 ### Changed
 ### Fixed
 
