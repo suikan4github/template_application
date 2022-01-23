@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 ### Changed
 ### Fixed
+- [Issue #22](https://github.com/suikan4github/template_application/issues/22) : Error message from GCOV 
 
 ## [1.4.0] - 2022-01-22
 ### Added
