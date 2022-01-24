@@ -21,16 +21,23 @@ set(TEST_EXECUTABLE_NAME test_${PROJECT_NAME})
 # Add the executable for the testcase which is using googletest
 add_executable(${TEST_EXECUTABLE_NAME} ${TEST_SRC} ${LIB_SRC})
 
-    if(NOT MSVC)
-        # Delete the gcov data file before linking. Otherwise, we will get many errors. 
+    # Delete the gcov data file before linking. Otherwise, we will get many errors. 
+    if(UNIX)
         add_custom_command(
             TARGET ${TEST_EXECUTABLE_NAME} PRE_LINK
             COMMAND find . -name "*.gcda" -delete
             COMMENT "Deleting *.gcda files under ${CMAKE_BINARY_DIR}"
             WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
             VERBATIM)
+    elseif(WIN32 AND NOT MSVC)
+        add_custom_command(
+            TARGET ${TEST_EXECUTABLE_NAME} PRE_LINK
+            COMMAND powershell -c remove-item -include *.gcda -recurse
+            COMMENT "Deleting *.gcda files under ${CMAKE_BINARY_DIR}"
+            WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+            VERBATIM)
     endif()
-
+    
     # Add the library under test.
     target_link_libraries(${TEST_EXECUTABLE_NAME}  
                             "gtest_main"

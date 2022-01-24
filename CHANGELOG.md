@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 ### Fixed
 - [Issue #22](https://github.com/suikan4github/template_application/issues/22) : Error message from GCOV 
+- [Issue #23](https://github.com/suikan4github/template_application/issues/23) :  Make platform designation precise.
 
 ## [1.4.0] - 2022-01-22
 ### Added
