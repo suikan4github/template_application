@@ -85,7 +85,7 @@ ctest
 Run followings on the shell. 
 ```Shell
 sudo snap install code --classic
-sudo apt-get install build-essential cmake doxygen
+sudo apt-get install build-essential cmake doxygen graphviz
 ```
 - Note 1: After installing VS CODE, install the [C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack) and the [Gcov Viewer extension](https://marketplace.visualstudio.com/items?itemName=JacquesLucke.gcov-viewer) to the VS CODE.
 ### Windows
@@ -114,7 +114,7 @@ winget install Microsoft.VisualStudioCode -e
 ```
 Then, run followings on the Ubuntu shell. 
 ```Shell
-sudo apt-get install build-essential cmake doxygen ca-certificates
+sudo apt-get install build-essential cmake doxygen graphviz ca-certificates
 ```
 - Note 1: After installing VS CODE, install the [C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack) and the [Gcov Viewer extension](https://marketplace.visualstudio.com/items?itemName=JacquesLucke.gcov-viewer) to the VS CODE.
 

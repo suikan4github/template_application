@@ -9,25 +9,26 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 ### Fixed
 - [Issue #22](https://github.com/suikan4github/template_application/issues/22) : Error message from GCOV 
-- [Issue #23](https://github.com/suikan4github/template_application/issues/23) :  Make platform designation precise.
+- [Issue #23](https://github.com/suikan4github/template_application/issues/23) : Make platform designation precise.
+- [Issue #24](https://github.com/suikan4github/template_application/issues/24) : Add graphviz to README.md #24 
 
 ## [1.4.0] - 2022-01-22
 ### Added
-- [Issue #20](https://github.com/suikan4github/template_application/issues/20) :  Add doxygen auto generation.
+- [Issue #20](https://github.com/suikan4github/template_application/issues/20) : Add doxygen auto generation.
 ### Changed
 ### Fixed
 
 ## [1.3.0] - 2022-01-10
 ### Added
-- [Issue #17](https://github.com/suikan4github/template_application/issues/17) :  Add gcovr support. 
+- [Issue #17](https://github.com/suikan4github/template_application/issues/17) : Add gcovr support. 
 ### Changed
-- [Issue #18](https://github.com/suikan4github/template_application/issues/18) :   Display alll warning during build
+- [Issue #18](https://github.com/suikan4github/template_application/issues/18) : Display alll warning during build
 ### Fixed
 
 ## [1.2.0] - 2022-01-02
 ### Added
-- [Issue #13](https://github.com/suikan4github/template_application/issues/13) :  Add gcov support. 
-- [Issue #14](https://github.com/suikan4github/template_application/issues/14) :  Add Windows run on action 
+- [Issue #13](https://github.com/suikan4github/template_application/issues/13) : Add gcov support. 
+- [Issue #14](https://github.com/suikan4github/template_application/issues/14) : Add Windows run on action 
 ### Changed
 ### Fixed
 
